@@ -14,10 +14,9 @@
   sha: 1.5.1
   hooks:
     - id: forbid-binary
-      exclude: (extras/jar/plantuml.jar)
     - id: git-dirty
     - id: shellcheck
-      exclude: (extras/script/wait-for-it.sh|extras/git/hooks/prepare-commit-msg)
+      exclude: (extras/script/wait-for-it.sh|.hooks/prepare-commit-msg)
       args:
         - --exclude=SC1072,SC1073,SC2068
 - repo: https://github.com/pre-commit/pre-commit-hooks.git
